@@ -46,7 +46,7 @@ public class ExecutionOnBrowserStack {
         browserstackOptions.put("appiumVersion", "2.0.0");
         desiredCapabilities.setCapability("bstack:options", browserstackOptions);
         uiAutomator2Options.merge(desiredCapabilities);
-        androidDriver = new AndroidDriver(new URL("https://sivareddy_Cnbmzj:HCpYpbNsUFNNsByoRp3S@hub.browserstack.com/wd/hub"), uiAutomator2Options);
+        androidDriver = new AndroidDriver(new URL("https://testuser:accesskey@hub.browserstack.com/wd/hub"), uiAutomator2Options);
         //androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723"), uiAutomator2Options);
         wait = new WebDriverWait(androidDriver, Duration.ofSeconds(30));
         Thread.sleep(5000);
